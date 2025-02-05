@@ -72,3 +72,31 @@
 .experience ul{
     list-style: circle;
 }
+
+@media(max-width: 800px){
+    .experience{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experience .subtitle{
+        color: #141414;
+    }
+
+    .experience-text{
+        font-size: 1.25rem;
+    }
+
+    .company-year{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+}
+
+@media(max-width: 400px){
+    .experience-company{
+        grid-template-columns: 1fr;
+    }
+}

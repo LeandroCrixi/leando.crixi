@@ -8,8 +8,15 @@
     align-items: center;
 }
 
+.test{
+    border-radius: 30%;
+    object-fit: cover;
+    object-position: bottom;
+    height: 400px;
+}
+
 .introduction-head h1{
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1.125;
     margin-bottom: 3rem;
     position: relative;
@@ -35,7 +42,7 @@
 }
 
 .introduction-head p{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #525252;
 }
 
