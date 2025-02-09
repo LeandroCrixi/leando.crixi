@@ -1,5 +1,6 @@
 .footer{
     background: #000000;
+    text-align: center;
 }
 
 .footer-container{
@@ -24,16 +25,13 @@
     line-height: 1.1;
     color: #ffffff;
     margin-bottom: 30px;
+    display: flex;
 }
 
 .footer-copy{
     grid-column: 1 / -1;
     font-size: 1.125rem;
     color: #8f8f8f;
-}
-
-.test-foo{
-    background: url('../img/whatsapp.svg') no-repeat center;
 }
 
 @media(max-width: 800px){

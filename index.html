@@ -25,7 +25,7 @@
         <!-- <img src="./img/perfil.jpg" alt="Lobo" width="360" height="520"> -->
         <img class="test" src="./img/leo.jpeg" alt="Lobo" width="360" height="520">
         <div class="introduction-head">
-            <h1>Developer <br> Full Stack</h1>
+            <h1>Full Stack <br>Developer </h1>
             <h3>HTML | CSS | JavaScript | React |TypeScript</h3>
             <p>Located in Valencia, ES 🏐🏖️</p>
         </div>
@@ -34,16 +34,22 @@
     <section aria-label="Experience" class="experience" id="experience">
         <h2 class="subtitle">Experience</h2>
         <div>
-            <p class="experience-text">Motivated, collaborative, multilingual Senior Analyst/Junior Developer
+            <p class="experience-text">Motivated, collaborative, multilingual Senior Analyst/Full Stack Developer
                 with experience in data analytics, programming, and customer
                 support interested in opportunities in web development. <br>Programming language
                 experience: <br> <strong>HTML, CSS, JavaScript, React, TypeScript, MySQL.</strong></p>
+
+                <!-- 
+                    Add freelancer experience
+                    pages created from classes and others
+                    maybe removing other experiences that are not relevant
+                -->
                 
             <!-- Experience Nº 1 -->
             <div class="experience-company">
                 <span class="company-year">2021-2025</span>
                 <h3 class="company-title">Retail inMotion (Ireland/Remote)</h3>
-                <span class="company-title">Customer Success Analyst | Junior Developer</span>
+                <span class="company-title">Customer Success Analyst | Full Stack</span>
                 <div class="company-description">
                     <p><u>Junior Web Developer duties</u></p>
                     <ul class="experience-description">
@@ -100,6 +106,16 @@
         </div>
     </section>
 
+    <!-- Add Portfolio Section -->
+     <!-- 
+        1 - ClassGap Projects
+        2 - Youtube Projects
+        3 - Origamid Projects
+        4 - Katie Projects
+        5 - MyProjects Projects
+        6 - FreeCodeCamp Projects
+       -->
+
     <section class="education" id="education" aria-label="Education">
         <div class="education-container">
             <h2 class="subtitle">Education</h2>
@@ -152,10 +168,15 @@
                 opportunities. Available for immediate work.</p>
             <ul class="footer-contact">
                 <li>leandro.crixi@hotmail.com</li>
-                <li class="test-foo">+353 83 468-8541</li>
+                <li class="test-foo">+353 83 468-8541 <img src="./img/whatsapp.svg" alt=""></li>
             </ul>
-            <p class="footer-copy">Leandro Crixi. Some rights reserved.</p>
+            <p class="footer-copy">Leandro Crixi &copy; <span id="current-year"></span>. Some rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Script to update the year dynamically -->
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
