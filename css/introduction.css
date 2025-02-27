@@ -26,7 +26,7 @@
     font-size: 1.65rem;
     line-height: 1.125;
     margin-bottom: 2rem;
-    color: #525252;
+    color: var(--dark-gray-color);
 }
 
 .introduction-head h1::before{
@@ -43,7 +43,7 @@
 
 .introduction-head p{
     font-size: 1.4rem;
-    color: #525252;
+    color: var(--dark-gray-color);
 }
 
 @media(max-width: 1000px){

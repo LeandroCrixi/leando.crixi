@@ -1,5 +1,5 @@
 .footer{
-    background: #000000;
+    background: var(--black-color);
     text-align: center;
 }
 
@@ -16,14 +16,14 @@
 .footer-text{
     font-size: 1.5rem;
     line-height: 1.33;
-    color: #cccccc;
+    color: var(--light-gray-color-2);
 }
 
 .footer-contact li{
     font-weight: bold;
     font-size: 2.25rem;
     line-height: 1.1;
-    color: #ffffff;
+    color: var(--white-color);
     margin-bottom: 30px;
     display: flex;
 }
@@ -31,7 +31,7 @@
 .footer-copy{
     grid-column: 1 / -1;
     font-size: 1.125rem;
-    color: #8f8f8f;
+    color: var(--gray-color-2);
 }
 
 @media(max-width: 800px){
