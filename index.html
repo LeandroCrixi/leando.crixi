@@ -12,7 +12,7 @@
     <meta name="author" content="Leandro Crixi">
 
     <title>Leandro Crixi - Full Stack Developer</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./src/css/style.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,12 +32,10 @@
           "email": "leandro.crixi@hotmail.com"
         }
         </script>
-
 </head>
 
 <body>
     <header class="header">
-        <!-- <img src="./img/marca.svg" alt="Lobo" width="104" height="38"> -->
         <h2 class="header-title">Leo</h2>
         <nav>
             <ul class="header-menu">
@@ -50,15 +48,12 @@
     </header>
 
     <main class="introduction">
-        <!-- <img src="./img/perfil.jpg" alt="Lobo" width="360" height="520"> -->
-        <img class="leoImg" src="./img/leo.jpeg" alt="Leandro Crixi - Full Stack Developer Profile Picture" width="360"
-            height="520" loading="lazy">
+        <img class="leoImg" src="./public/assets/img/leo.jpeg"
+            alt="Leandro Crixi - Full Stack Developer Profile Picture" width="360" height="520" loading="lazy">
         <div class="introduction-head">
-            <!-- <h1>Full Stack <br>Developer </h1> -->
             <h1>Leandro Crixi <br> Full Stack <br> Developer</h1>
             <h3>HTML | CSS | JavaScript | React |TypeScript</h3>
             <p>Located in Valencia, ES 🏐🏖️</p>
-            <!-- Change for available to work OR working as freelancer-->
         </div>
     </main>
 
@@ -70,13 +65,21 @@
                 support interested in opportunities in web development. <br>Programming language
                 experience: <br> <strong>HTML, CSS, JavaScript, React, TypeScript, MySQL.</strong></p>
 
-            <!-- 
-                    Add freelancer experience
-                    pages created from classes and others
-                    maybe removing other experiences that are not relevant
-                -->
-
             <!-- Experience Nº 1 -->
+            <div class="experience-company">
+                <span class="company-year">2025-Present</span>
+                <h3 class="company-title">Self-employed</h3>
+                <span class="company-title">Freelance Web Developer</span>
+                <div class="company-description">
+                    <ul class="experience-description">
+                        <li>Engaging in ongoing projects related to programming and web
+                            development after being made redundant in January 2025</li>
+                        <li>Full stack web development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience Nº 2 -->
             <div class="experience-company">
                 <span class="company-year">2021-2025</span>
                 <h3 class="company-title">Retail inMotion (Ireland/Remote)</h3>
@@ -99,7 +102,7 @@
                 </div>
             </div>
 
-            <!-- Experience Nº 2 -->
+            <!-- Experience Nº 3 -->
             <div class="experience-company">
                 <span class="company-year">2019-2021</span>
                 <h3 class="company-title">Accenture, Meta (Ireland/Remote)</h3>
@@ -116,19 +119,19 @@
                 </div>
             </div>
 
-            <!-- Experience Nº 3 -->
+            <!-- Experience Nº 4 -->
             <div class="experience-company">
                 <span class="company-year">2018-2019</span>
                 <h3 class="company-title">Levi Strauss & Co. (Ireland)</h3>
                 <span class="company-title">Sales Associate</span>
             </div>
-            <!-- Experience Nº 4 -->
+            <!-- Experience Nº 5 -->
             <div class="experience-company">
                 <span class="company-year">2017-2018</span>
                 <h3 class="company-title">Jack & Jones. (Ireland)</h3>
                 <span class="company-title">Supervisor</span>
             </div>
-            <!-- Experience Nº 5 -->
+            <!-- Experience Nº 6 -->
             <div class="experience-company">
                 <span class="company-year">2012-2015</span>
                 <h3 class="company-title">Pernambucanas (Brazil)</h3>
@@ -195,21 +198,29 @@
 
     <footer class="footer" id="contact" aria-label="Contact">
         <div class="footer-container">
-            <p class="footer-text">Currently traveling while engaging with continuing education
-                opportunities. Available for immediate work.</p>
             <!-- update this sections as well -->
+            <p class="footer-text">I provide clear communication, on-time delivery, and high-quality code.
+                Whether you need a brand new website, a feature update, or performance improvements. <br>I'm here to help!
+            </p>
             <ul class="footer-contact">
                 <li>leandro.crixi@hotmail.com</li>
-                <li class="test-foo">+353 83 468-8541 <img src="./img/whatsapp.svg" alt=""></li>
+                <li class="test-foo">+353 83 468-8541 <img src="./public/assets/img/whatsapp.svg" alt="whatsapp img">
+                </li>
             </ul>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/leandrocrixi/">
+                            <img src="./public/icons/linkedin-icon.svg" alt="Linkedin icon" width="30">
+                        </a></li>
+                    <li><a href="https://github.com/LeandroCrixi">
+                            <img src="./public/icons/github-mark-white.svg" alt="Github icon" width="30">
+                        </a></li>
+                </ul>
+            </div>
             <p class="footer-copy">Leandro Crixi &copy; <span id="current-year"></span>. Some rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Script to update the year dynamically -->
-    <script>
-        document.getElementById("current-year").textContent = new Date().getFullYear();
-    </script>
+    <script src="./src/js/script.min.js" type="module" defer></script>
 </body>
 
 </html>
